@@ -1,0 +1,867 @@
+[2023-11-26T12:10:04.202+0000] {processor.py:157} INFO - Started process (PID=175) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:10:04.207+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:10:04.211+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:10:04.210+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:10:04.386+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:10:04.357+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:10:04.389+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:10:04.433+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.241 seconds
+[2023-11-26T12:10:34.913+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:10:34.914+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:10:34.916+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:10:34.916+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:10:34.977+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:10:34.972+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:10:34.978+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:10:35.018+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.109 seconds
+[2023-11-26T12:11:05.301+0000] {processor.py:157} INFO - Started process (PID=209) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:11:05.303+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:11:05.305+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:11:05.305+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:11:05.384+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:11:05.372+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:11:05.386+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:11:05.451+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.154 seconds
+[2023-11-26T12:11:35.786+0000] {processor.py:157} INFO - Started process (PID=226) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:11:35.788+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:11:35.789+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:11:35.789+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:11:35.866+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:11:35.853+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:11:35.868+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:11:35.886+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.105 seconds
+[2023-11-26T12:12:06.273+0000] {processor.py:157} INFO - Started process (PID=243) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:12:06.274+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:12:06.276+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:12:06.275+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:12:06.339+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:12:06.329+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:12:06.341+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:12:06.362+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.096 seconds
+[2023-11-26T12:12:36.680+0000] {processor.py:157} INFO - Started process (PID=260) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:12:36.683+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:12:36.685+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:12:36.685+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:12:36.764+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:12:36.751+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:12:36.766+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:12:36.788+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.117 seconds
+[2023-11-26T12:13:07.150+0000] {processor.py:157} INFO - Started process (PID=277) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:13:07.151+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:13:07.154+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:13:07.153+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:13:07.229+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:13:07.217+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:13:07.231+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:13:07.251+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.108 seconds
+[2023-11-26T12:13:37.570+0000] {processor.py:157} INFO - Started process (PID=294) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:13:37.572+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:13:37.574+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:13:37.573+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:13:37.642+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:13:37.633+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:13:37.643+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:13:37.663+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.102 seconds
+[2023-11-26T12:14:08.035+0000] {processor.py:157} INFO - Started process (PID=311) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:14:08.038+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:14:08.045+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:14:08.042+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:14:08.219+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:14:08.204+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:14:08.220+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:14:08.241+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.212 seconds
+[2023-11-26T12:14:38.824+0000] {processor.py:157} INFO - Started process (PID=328) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:14:38.826+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:14:38.827+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:14:38.827+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:14:38.882+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:14:38.875+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:14:38.883+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:14:38.969+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.149 seconds
+[2023-11-26T12:15:09.946+0000] {processor.py:157} INFO - Started process (PID=345) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:15:09.948+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:15:09.950+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:15:09.949+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:15:10.016+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:15:10.008+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:15:10.018+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:15:10.042+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.100 seconds
+[2023-11-26T12:15:41.034+0000] {processor.py:157} INFO - Started process (PID=362) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:15:41.036+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:15:41.037+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:15:41.037+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:15:41.086+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:15:41.080+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:15:41.086+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:15:41.107+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.078 seconds
+[2023-11-26T12:16:11.622+0000] {processor.py:157} INFO - Started process (PID=379) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:16:11.634+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:16:11.647+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:16:11.645+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:16:11.765+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:16:11.757+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:16:11.766+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:16:11.841+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.224 seconds
+[2023-11-26T12:16:42.382+0000] {processor.py:157} INFO - Started process (PID=396) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:16:42.387+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:16:42.391+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:16:42.390+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:16:42.558+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:16:42.536+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:16:42.562+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:16:42.622+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.258 seconds
+[2023-11-26T12:17:13.201+0000] {processor.py:157} INFO - Started process (PID=413) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:17:13.204+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:17:13.205+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:17:13.205+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:17:13.255+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:17:13.244+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:17:13.256+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:17:13.312+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.115 seconds
+[2023-11-26T12:17:43.612+0000] {processor.py:157} INFO - Started process (PID=430) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:17:43.614+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:17:43.615+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:17:43.615+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:17:43.670+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:17:43.663+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:17:43.671+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:17:43.735+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.128 seconds
+[2023-11-26T12:18:14.137+0000] {processor.py:157} INFO - Started process (PID=447) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:18:14.139+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:18:14.141+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:18:14.141+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:18:14.215+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:18:14.202+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:18:14.217+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:18:14.238+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.107 seconds
+[2023-11-26T12:18:44.642+0000] {processor.py:157} INFO - Started process (PID=464) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:18:44.643+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:18:44.645+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:18:44.645+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:18:44.722+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:18:44.710+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:18:44.724+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:18:44.783+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.147 seconds
+[2023-11-26T12:19:15.145+0000] {processor.py:157} INFO - Started process (PID=481) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:19:15.148+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:19:15.150+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:19:15.149+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:19:15.223+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:19:15.209+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:19:15.225+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:19:15.296+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.156 seconds
+[2023-11-26T12:19:45.708+0000] {processor.py:157} INFO - Started process (PID=498) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:19:45.711+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:19:45.714+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:19:45.713+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:19:45.791+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:19:45.779+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:19:45.792+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:19:45.823+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.124 seconds
+[2023-11-26T12:20:16.365+0000] {processor.py:157} INFO - Started process (PID=515) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:16.367+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:20:16.370+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:20:16.370+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:16.452+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:20:16.438+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('postgre_sql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgre_sql_conn` isn't defined
+[2023-11-26T12:20:16.453+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:16.473+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.114 seconds
+[2023-11-26T12:20:25.741+0000] {processor.py:157} INFO - Started process (PID=534) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:25.743+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:20:25.745+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:20:25.745+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:25.851+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:20:25.840+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('Test_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `Test_conn` isn't defined
+[2023-11-26T12:20:25.853+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:25.868+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.133 seconds
+[2023-11-26T12:20:56.366+0000] {processor.py:157} INFO - Started process (PID=551) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:56.368+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:20:56.371+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:20:56.370+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:56.460+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:20:56.445+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('Test_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `Test_conn` isn't defined
+[2023-11-26T12:20:56.461+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:20:56.525+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.165 seconds
+[2023-11-26T12:21:27.005+0000] {processor.py:157} INFO - Started process (PID=568) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:21:27.008+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:21:27.010+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:21:27.010+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:21:27.074+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:21:27.063+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 6, in <module>
+    postgre_con = BaseHook.get_connection('Test_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `Test_conn` isn't defined
+[2023-11-26T12:21:27.076+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:21:27.138+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.137 seconds
+[2023-11-26T12:21:57.631+0000] {processor.py:157} INFO - Started process (PID=585) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:21:57.633+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:21:57.635+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:21:57.635+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:21:57.700+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:21:57.700+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:21:57.722+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:21:57.710+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:21:57.727+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:21:57.746+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.120 seconds
+[2023-11-26T12:22:28.198+0000] {processor.py:157} INFO - Started process (PID=602) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:22:28.201+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:22:28.203+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:22:28.202+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:22:28.259+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:22:28.258+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:22:28.278+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:22:28.266+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:22:28.282+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:22:28.304+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.112 seconds
+[2023-11-26T12:22:58.769+0000] {processor.py:157} INFO - Started process (PID=619) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:22:58.772+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:22:58.774+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:22:58.773+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:22:58.832+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:22:58.832+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:22:58.854+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:22:58.843+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:22:58.859+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:22:58.881+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.122 seconds
+[2023-11-26T12:23:29.347+0000] {processor.py:157} INFO - Started process (PID=636) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:23:29.349+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:23:29.352+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:23:29.351+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:23:29.414+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:23:29.413+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:23:29.436+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:23:29.422+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:23:29.440+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:23:29.469+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.126 seconds
+[2023-11-26T12:23:59.973+0000] {processor.py:157} INFO - Started process (PID=653) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:23:59.975+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:23:59.976+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:23:59.976+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:24:00.052+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:24:00.051+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:24:00.071+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:24:00.058+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:24:00.075+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:24:00.095+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.129 seconds
+[2023-11-26T12:24:30.640+0000] {processor.py:157} INFO - Started process (PID=670) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:24:30.642+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:24:30.643+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:24:30.643+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:24:30.724+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:24:30.723+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:24:30.742+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:24:30.732+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:24:30.748+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:24:30.812+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.177 seconds
+[2023-11-26T12:25:01.321+0000] {processor.py:157} INFO - Started process (PID=687) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:25:01.324+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:25:01.326+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:25:01.326+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:25:01.393+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:25:01.393+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:25:01.413+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:25:01.403+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:25:01.418+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:25:01.444+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.128 seconds
+[2023-11-26T12:25:32.123+0000] {processor.py:157} INFO - Started process (PID=704) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:25:32.125+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:25:32.127+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:25:32.127+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:25:32.198+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:25:32.197+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:25:32.221+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:25:32.207+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:25:32.226+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:25:32.292+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.174 seconds
+[2023-11-26T12:26:02.812+0000] {processor.py:157} INFO - Started process (PID=721) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:26:02.814+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:26:02.816+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:26:02.816+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:26:02.906+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:26:02.906+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:26:02.927+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:26:02.913+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:26:02.931+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:26:02.951+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.144 seconds
+[2023-11-26T12:26:33.428+0000] {processor.py:157} INFO - Started process (PID=738) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:26:33.430+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:26:33.432+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:26:33.432+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:26:33.488+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:26:33.487+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:26:33.504+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:26:33.495+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:26:33.508+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:26:33.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.149 seconds
+[2023-11-26T12:27:04.118+0000] {processor.py:157} INFO - Started process (PID=755) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:27:04.120+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:27:04.123+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:27:04.122+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:27:04.196+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:27:04.195+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:27:04.217+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:27:04.205+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:27:04.222+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:27:04.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.131 seconds
+[2023-11-26T12:27:34.742+0000] {processor.py:157} INFO - Started process (PID=772) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:27:34.744+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:27:34.746+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:27:34.746+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:27:34.812+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:27:34.811+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:27:34.831+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:27:34.818+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:27:34.835+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:27:34.870+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.132 seconds
+[2023-11-26T12:28:05.341+0000] {processor.py:157} INFO - Started process (PID=789) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:28:05.344+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:28:05.346+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:28:05.346+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:28:05.418+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:28:05.418+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:28:05.435+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:28:05.425+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:28:05.438+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:28:05.505+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.169 seconds
+[2023-11-26T12:28:36.006+0000] {processor.py:157} INFO - Started process (PID=806) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:28:36.008+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:28:36.010+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:28:36.009+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:28:36.083+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:28:36.083+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:28:36.104+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:28:36.092+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:28:36.108+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:28:36.130+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.130 seconds
+[2023-11-26T12:29:06.596+0000] {processor.py:157} INFO - Started process (PID=823) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:29:06.598+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:29:06.600+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:29:06.600+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:29:06.671+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:29:06.670+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:29:06.692+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:29:06.680+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:29:06.696+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:29:06.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.129 seconds
+[2023-11-26T12:29:37.023+0000] {processor.py:157} INFO - Started process (PID=841) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:29:37.027+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:29:37.030+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:29:37.029+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:29:37.128+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:29:37.128+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:29:37.149+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:29:37.137+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:29:37.155+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:29:37.182+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.171 seconds
+[2023-11-26T12:30:07.803+0000] {processor.py:157} INFO - Started process (PID=858) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:07.806+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:30:07.808+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:07.808+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:07.869+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:07.868+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:30:07.883+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:07.875+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/pg_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pg_insert_dag.py", line 41, in <module>
+    bash_command=f"python3 /opt/airflow/dags/pg_read.py {postgre_con_host} {airflow} {airflow} {postgre_con_port}"
+NameError: name 'airflow' is not defined
+[2023-11-26T12:30:07.886+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:07.949+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.152 seconds
+[2023-11-26T12:30:10.961+0000] {processor.py:157} INFO - Started process (PID=863) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:10.963+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:30:10.966+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:10.965+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:11.078+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:11.077+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:30:11.099+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:11.261+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:11.260+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-11-26T12:30:11.282+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:11.281+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-11-26T12:30:11.299+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:11.298+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-11-26T12:30:11.300+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:11.300+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:30:11.329+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:11.329+0000] {dag.py:2963} INFO - Creating ORM DAG for dag_pg_insert
+[2023-11-26T12:30:11.361+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:11.360+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-25T10:00:00+00:00, run_after=2023-11-26T10:00:00+00:00
+[2023-11-26T12:30:11.422+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.466 seconds
+[2023-11-26T12:30:37.696+0000] {processor.py:157} INFO - Started process (PID=880) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:37.698+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:30:37.700+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:37.699+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:37.762+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:37.761+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:30:37.777+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:30:37.784+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:37.784+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:30:37.817+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:30:37.817+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-25T10:00:00+00:00, run_after=2023-11-26T10:00:00+00:00
+[2023-11-26T12:30:37.905+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.215 seconds
+[2023-11-26T12:31:08.303+0000] {processor.py:157} INFO - Started process (PID=897) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:31:08.305+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:31:08.307+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:31:08.307+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:31:08.360+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:31:08.359+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:31:08.375+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:31:08.406+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:31:08.406+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:31:08.466+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:31:08.466+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-25T10:00:00+00:00, run_after=2023-11-26T10:00:00+00:00
+[2023-11-26T12:31:08.534+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.235 seconds
+[2023-11-26T12:31:38.920+0000] {processor.py:157} INFO - Started process (PID=978) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:31:38.921+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:31:38.922+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:31:38.922+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:31:38.945+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:31:38.945+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:31:38.955+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:31:38.974+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:31:38.974+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:31:39.009+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:31:39.009+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:31:39.072+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.155 seconds
+[2023-11-26T12:32:09.551+0000] {processor.py:157} INFO - Started process (PID=995) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:32:09.553+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:32:09.555+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:32:09.554+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:32:09.589+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:32:09.589+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:32:09.600+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:32:09.623+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:32:09.623+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:32:09.660+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:32:09.660+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:32:09.744+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.198 seconds
+[2023-11-26T12:32:39.940+0000] {processor.py:157} INFO - Started process (PID=1012) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:32:39.941+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:32:39.942+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:32:39.942+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:32:39.985+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:32:39.984+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:32:39.995+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:32:40.014+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:32:40.013+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:32:40.044+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:32:40.043+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:32:40.119+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.184 seconds
+[2023-11-26T12:33:10.577+0000] {processor.py:157} INFO - Started process (PID=1029) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:33:10.579+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:33:10.582+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:33:10.581+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:33:10.636+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:33:10.636+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:33:10.648+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:33:10.667+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:33:10.667+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:33:10.691+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:33:10.690+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:33:10.718+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.147 seconds
+[2023-11-26T12:33:41.103+0000] {processor.py:157} INFO - Started process (PID=1046) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:33:41.105+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:33:41.107+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:33:41.106+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:33:41.157+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:33:41.157+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:33:41.167+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:33:41.188+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:33:41.187+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:33:41.215+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:33:41.215+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:33:41.243+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.144 seconds
+[2023-11-26T12:34:11.685+0000] {processor.py:157} INFO - Started process (PID=1063) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:34:11.686+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:34:11.687+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:34:11.687+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:34:11.711+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:34:11.711+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:34:11.723+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:34:11.750+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:34:11.749+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:34:11.777+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:34:11.776+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:34:11.837+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.156 seconds
+[2023-11-26T12:34:42.265+0000] {processor.py:157} INFO - Started process (PID=1112) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:34:42.268+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:34:42.269+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:34:42.269+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:34:42.326+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:34:42.325+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:34:42.337+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:34:42.358+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:34:42.357+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:34:42.386+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:34:42.385+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:34:42.413+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.155 seconds
+[2023-11-26T12:35:12.976+0000] {processor.py:157} INFO - Started process (PID=1129) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:35:12.978+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:35:12.980+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:35:12.979+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:35:13.044+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:35:13.044+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:35:13.074+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:35:13.107+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:35:13.106+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:35:13.144+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:35:13.143+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:35:13.247+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.276 seconds
+[2023-11-26T12:35:43.711+0000] {processor.py:157} INFO - Started process (PID=1146) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:35:43.712+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:35:43.714+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:35:43.714+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:35:43.760+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:35:43.759+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:35:43.771+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:35:43.788+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:35:43.788+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:35:43.813+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:35:43.812+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:35:43.895+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.186 seconds
+[2023-11-26T12:36:14.375+0000] {processor.py:157} INFO - Started process (PID=1163) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:36:14.377+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:36:14.378+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:36:14.378+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:36:14.428+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:36:14.428+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:36:14.444+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:36:14.470+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:36:14.470+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:36:14.499+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:36:14.499+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:36:14.586+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.215 seconds
+[2023-11-26T12:36:45.017+0000] {processor.py:157} INFO - Started process (PID=1180) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:36:45.019+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:36:45.020+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:36:45.020+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:36:45.058+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:36:45.058+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:36:45.070+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:36:45.098+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:36:45.098+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:36:45.128+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:36:45.128+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:36:45.153+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.140 seconds
+[2023-11-26T12:37:15.607+0000] {processor.py:157} INFO - Started process (PID=1197) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:37:15.609+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:37:15.611+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:37:15.611+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:37:15.668+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:37:15.668+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:37:15.680+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:37:15.706+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:37:15.706+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:37:15.730+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:37:15.730+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:37:15.813+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.212 seconds
+[2023-11-26T12:37:46.226+0000] {processor.py:157} INFO - Started process (PID=1214) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:37:46.228+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:37:46.229+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:37:46.229+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:37:46.283+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:37:46.283+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:37:46.298+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:37:46.450+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:37:46.449+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:37:46.490+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:37:46.490+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:37:46.534+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.313 seconds
+[2023-11-26T12:38:17.007+0000] {processor.py:157} INFO - Started process (PID=1263) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:38:17.011+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:38:17.014+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:38:17.013+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:38:17.090+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:38:17.090+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:38:17.104+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:38:17.130+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:38:17.130+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:38:17.157+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:38:17.157+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:38:17.238+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.241 seconds
+[2023-11-26T12:38:47.665+0000] {processor.py:157} INFO - Started process (PID=1280) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:38:47.668+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:38:47.699+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:38:47.699+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:38:47.759+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:38:47.759+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:38:47.779+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:38:47.803+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:38:47.802+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:38:47.834+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:38:47.834+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:38:47.872+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.214 seconds
+[2023-11-26T12:39:18.287+0000] {processor.py:157} INFO - Started process (PID=1297) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:39:18.289+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:39:18.290+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:39:18.290+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:39:18.321+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:39:18.321+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:39:18.332+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:39:18.352+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:39:18.352+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:39:18.383+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:39:18.382+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:39:18.418+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.136 seconds
+[2023-11-26T12:39:48.849+0000] {processor.py:157} INFO - Started process (PID=1314) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:39:48.851+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:39:48.852+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:39:48.851+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:39:48.883+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:39:48.883+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:39:48.894+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:39:48.913+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:39:48.913+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:39:48.943+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:39:48.942+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:39:48.981+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.136 seconds
+[2023-11-26T12:40:19.504+0000] {processor.py:157} INFO - Started process (PID=1331) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:40:19.506+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:40:19.508+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:40:19.508+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:40:19.560+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:40:19.560+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:40:19.574+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:40:19.593+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:40:19.593+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:40:19.627+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:40:19.627+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:40:19.701+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.201 seconds
+[2023-11-26T12:40:50.137+0000] {processor.py:157} INFO - Started process (PID=1348) to work on /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:40:50.139+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pg_insert_dag.py for tasks to queue
+[2023-11-26T12:40:50.140+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:40:50.140+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:40:50.186+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:40:50.186+0000] {base.py:73} INFO - Using connection ID 'Test_conn' for task execution.
+[2023-11-26T12:40:50.198+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_pg_insert']) retrieved from /opt/airflow/dags/pg_insert_dag.py
+[2023-11-26T12:40:50.226+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:40:50.226+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-26T12:40:50.262+0000] {logging_mixin.py:151} INFO - [2023-11-26T12:40:50.262+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_pg_insert to 2023-11-26T10:00:00+00:00, run_after=2023-11-27T10:00:00+00:00
+[2023-11-26T12:40:50.334+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pg_insert_dag.py took 0.200 seconds
